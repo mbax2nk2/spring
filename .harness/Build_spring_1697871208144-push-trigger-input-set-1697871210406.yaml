@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_spring_1697871208144-push-trigger-input-set
+  identifier: Build_spring_1697871208144pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: spring
+  pipeline:
+    identifier: Build_spring_1697871208144
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
