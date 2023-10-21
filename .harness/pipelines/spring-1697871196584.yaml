@@ -24,6 +24,14 @@ pipeline:
                     command: echo hello world
                   timeout: ""
                   type: Run
+              - step:
+                  type: Run
+                  name: Run_2
+                  identifier: Run_2
+                  spec:
+                    shell: Sh
+                    command: mvn clean package dependency:copy-dependencies
+                  description: asd
           platform:
             arch: Amd64
             os: Linux
